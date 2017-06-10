@@ -1,4 +1,4 @@
-# Data Engineering Test
+## Data Engineering Test
 
 The task is to transform a poorly formatted TSV file into a properly formatted, machine-readable TSV file. The file does not explicitly adhere to the TSV format, so GitHub and existing data tools cannot accurately parse the file.
 
@@ -23,7 +23,6 @@ To take the test, please complete the following steps:
 3. Create a table in Redshift and write the results to it. Credentials will be emailed to you separately. Save the query used to do this.
 4. Write a query that can run efficiently to check the emails column in the first table you created, write the domain names that appear more than once to a second table, and include the counts for each one. This query should operate regardless of whether or not the second table has already been created, and should only give the current count (i.e. old values are not preserved if the query is re-run).
 5. Commit the Python script, all queries, and a copy of the properly-formatted TSV to the root directory of the repository.
-6. Email an archive of your files to jake@gravitybrands.com. In this email, include an explanation as to any oddities found in the data that might indicate problems beyond poorly-formatted files.
 
 ### Bonus (optional)
 
