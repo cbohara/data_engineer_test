@@ -22,15 +22,3 @@ To take the test, please complete the following steps:
 2. Write a Python script to convert data into a parseable file, adhering to guidelines in the previous section.
 3. Create a table in Redshift and write the results to it. Credentials will be emailed to you separately. Save the query used to do this.
 4. Write a query that can run efficiently to check the emails column in the first table you created, write the domain names that appear more than once to a second table, and include the counts for each one. This query should operate regardless of whether or not the second table has already been created, and should only give the current count (i.e. old values are not preserved if the query is re-run).
-5. Commit the Python script, all queries, and a copy of the properly-formatted TSV to the root directory of the repository.
-
-### Bonus (optional)
-
-For bonus points, ambitious candidates can parallelize their algorithm. A parallelizable implementation will
-have the following properties:
-
-* Given an arbitrary byte `position` and `length`, the algorithm cleans a portion of the full data set and produces
-  a unique TSV output file.
-* Concatenating the outputs of multiple processes should result in a well-formed TSV file containing no duplicates
-
-*It's important to note that the arbitrary `position` may not necessarily be the start of a new line.*
